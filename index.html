@@ -5078,13 +5078,14 @@ function regNavIdx(idx) {
 }
 
 function regNavTo(id) {
-  const ids = ['ch-sumario','ch-objetivo','ch-criterios','ch-pontual','ch-leve','ch-moderada','ch-grave','ch-penalidades','ch-bonus','ch-desempate','ch-ganhador','ch-atualizacoes'];
+  const ids = [['sumario','objetivo','criterios','pontual','leve','moderada','grave','penalidades','bonus','desempate','ganhador','atualizacoes'],'ch-criterios','ch-pontual','ch-leve','ch-moderada','ch-grave','ch-penalidades','ch-bonus','ch-desempate','ch-ganhador','ch-atualizacoes'];
   regNavIdx(ids.indexOf(id));
 }
 
 
 function regNavIdx(idx) {
-  const chapters = ['ch-sumario','ch-objetivo','ch-criterios','ch-pontual','ch-leve','ch-moderada','ch-grave','ch-penalidades','ch-bonus','ch-desempate','ch-ganhador','ch-atualizacoes'];
+  const chapters = [   ['sumario','objetivo','criterios','pontual','leve','moderada','grave','penalidades','bonus','desempate','ganhador','atualizacoes']
+'sumario','objetivo','criterios','pontual','leve','moderada','grave','penalidades','bonus','desempate','ganhador','atualizacoes']'sumario','objetivo','criterios','pontual','leve','moderada','grave','penalidades','bonus','desempate','ganhador','atualizacoes''sumario','objetivo','criterios','pontual','leve','moderada','grave','penalidades','bonus','desempate','ganhador','atualizacoes']'sumario','objetivo','criterios','pontual','leve','moderada','grave','penalidades','bonus','desempate','ganhador','atualizacoes','ch-criterios','ch-pontual','ch-leve','ch-moderada','ch-grave','ch-penalidades','ch-bonus','ch-desempate','ch-ganhador','ch-atualizacoes'];
   const chapterId = chapters[idx] || chapters[0];
   regNavTo(chapterId);
   // Atualizar nav items
